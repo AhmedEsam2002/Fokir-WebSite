@@ -1,0 +1,708 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+/* clear-fix */
+.clear-fix {
+  clear: both;
+}
+
+/* first page  */
+.first-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/slider-02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* nav bar  */
+nav {
+  padding: 1.2% 12.3%;
+}
+.Fokir {
+  color: #ff305b;
+  float: left;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
+  text-decoration: none;
+}
+nav {
+  position: fixed;
+  /* background-color: rgba(0, 0, 0, 1); */
+  width: 100%;
+  padding: 1.2% 12.3%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999999999999999999999999999;
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+.nav-hello {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.Hello {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  padding: 0 100px;
+}
+.Hello * {
+  padding-bottom: 10px;
+}
+.p1 {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.Hello h1 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 77px;
+  color: #ff305b;
+
+  letter-spacing: 1px;
+}
+
+.p2 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
+}
+/* hovers  */
+
+nav ul li a:hover {
+  color: #ff305b;
+}
+
+/* second page  */
+
+.second-page {
+  margin-bottom: 101px;
+  margin-left: 311;
+}
+
+/* img_portfilo */
+.img_portfilo {
+  margin-top: 124px;
+
+  width: 30%;
+  position: relative;
+  float: left;
+}
+.img_portfilo img {
+  width: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  z-index: -1;
+
+  border: 10px solid #555555;
+  border-radius: 3%;
+}
+.img-socail {
+  width: 100%;
+  bottom: 0;
+  height: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.57);
+  opacity: 0;
+  transition: 1s;
+}
+.img-socail ul {
+  list-style: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-socail ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.img-socail ul li a i:hover {
+  color: #ff305b;
+}
+.img-socail ul li a i {
+  color: white;
+  transition: 1s;
+}
+/* img_portfilo hover  */
+.img_portfilo:hover .img-socail {
+  height: 100%;
+  opacity: 1;
+}
+
+/* portfilo-contant */
+
+.portfilo-contant {
+  margin-top: 85px;
+  width: 40%;
+  float: left;
+  margin-left: 100px;
+  font-family: Roboto;
+}
+.portfilo-contant * {
+  margin-bottom: 30px;
+}
+.portofile-p h2 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 7000;
+  font-size: 34px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.portofile-p h2 span {
+  color: #ff305b;
+
+  font-weight: bold;
+  font-size: 30px;
+}
+.portofile-p p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.portfilo-contant .hr_dashed {
+  width: 100%;
+  height: 0;
+  border: 1px dashed #555555;
+  margin-bottom: 30px;
+}
+
+.portfilo-information ul {
+  font-family: Roboto;
+  list-style: none;
+  margin-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #555555;
+}
+.portfilo-information ul li span {
+  font-weight: bold;
+  color: black;
+}
+.portfilo-information .ul1 {
+  font-family: Roboto;
+  float: left;
+  margin-right: 20%;
+}
+
+.portfilo-information .ul2 {
+  font-family: Roboto;
+  float: left;
+}
+
+.portfilo-information a {
+  font-family: Roboto;
+  background-color: #ff305c;
+  margin-right: 30px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  transition: 2s;
+  border-radius: 4px;
+}
+/* portfilo-information a  hovers */
+.portfilo-information a:hover {
+  background-color: #ec2403;
+}
+
+/* Third page  */
+
+.page-three {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  padding: 100px 0 54px 0;
+
+  overflow: hidden;
+}
+
+.services {
+  margin: auto;
+  padding: 0 175px;
+  margin-bottom: 16px;
+}
+.page-three .services div {
+  margin-top: 40px;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 40px 15px;
+
+  float: left;
+}
+
+.page-three div i {
+  color: #fe315a;
+  transition: 1s;
+  margin-bottom: 16px;
+}
+.page-three div h4 {
+  margin-bottom: 16px;
+  font-family: "Source Sans Pro";
+  color: #333333;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+}
+.page-three div p {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+}
+
+/* hovers  */
+.page-three div:hover {
+  background-color: white;
+  transition: 1s;
+}
+.page-three div:hover > i {
+  transform: scale(1.5);
+}
+/* page four  */
+.page-four {
+  text-align: center;
+  margin: auto;
+  padding: 100px 175px;
+}
+
+.page-four .choise {
+  margin-top: 40px;
+}
+.page-four .choise button {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  margin-right: 16px;
+  margin-bottom: 50px;
+  transition: 0.6s;
+}
+.page-four .choise button:hover {
+  color: #fe315a;
+}
+
+.image-div {
+  position: relative;
+  width: 30%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  float: left;
+  overflow: hidden;
+}
+.image-div img {
+  width: 100%;
+}
+.image-div div {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.image-div:hover div {
+  background-color: 555555;
+  opacity: 0.5;
+}
+/* page five  */
+.page-five {
+  text-align: center;
+  margin: auto;
+  vertical-align: middle;
+  background-color: #f1f1f1;
+  padding: 100px 190px;
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+.page-five div {
+  width: 25%;
+  float: left;
+}
+.page-five * {
+  margin-bottom: 15px;
+}
+.page-five div h4 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 29px;
+  color: #333333;
+}
+.page-four div p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17.6px;
+  color: #555555;
+}
+.page-five div i {
+  color: #fe305c;
+}
+/* all pages  */
+
+.min_hr {
+  width: 5%;
+  margin: auto;
+  margin-bottom: 5px;
+
+  border: 0.1px solid #fe315c;
+}
+.max_hr {
+  width: 15%;
+
+  margin: auto;
+  margin-bottom: 5px;
+
+  border: 0.1px solid #fe315c;
+}
+h3 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 30px;
+  color: #333333;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/* page six  */
+.page-six {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+}
+.Client {
+  position: relative;
+  width: 55%;
+  background-color: rgb(241, 241, 241);
+  padding: 60px 60px;
+  margin: auto;
+  margin-top: 40px;
+}
+.Client img {
+  position: relative;
+  z-index: 2;
+  width: 17%;
+  float: left;
+  border-radius: 50%;
+}
+.client-informaion {
+  width: 80%;
+  float: left;
+  padding-left: 30px;
+}
+.client-informaion * {
+  margin-bottom: 12px;
+}
+.Location i {
+  display: inline-block;
+}
+.Location p {
+  display: inline-block;
+  padding-left: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  color: #777777;
+}
+.client-informaion h4 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 29px;
+  color: #333333;
+}
+.client-informaion p {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+}
+.arrow-left {
+  position: absolute;
+  top: -97px;
+  left: -21px;
+
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+
+  border-right: 150px solid #fe315c;
+  transform: rotate(45deg);
+}
+.button_S {
+  margin: auto;
+  text-align: center;
+}
+.button_S .b1 {
+  width: 35px;
+  height: 15px;
+  border-radius: 10px;
+
+  margin: auto;
+  text-align: center;
+  /* float: left; */
+  background-color: #ff305b;
+  border-color: transparent;
+}
+
+.button_S .b2 {
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  /* float: left; */
+  border-color: #ff305b;
+  color: white;
+  background-color: white;
+}
+
+/* page seven  */
+.page-seven {
+  background-color: #f1f1f1;
+  padding: 100px 10%;
+}
+.cards {
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+.card {
+  width: 30%;
+  background-color: white;
+  padding-bottom: 10px;
+  float: left;
+
+  margin-left: 20px;
+
+  margin-top: 20px;
+}
+.card * {
+  display: block;
+}
+.card img {
+  width: 100%;
+}
+.card div {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.card div .data {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+}
+.card div .title {
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 26.4px;
+  text-align: start;
+  letter-spacing: normal;
+  color: black;
+  text-decoration: none;
+}
+.card div .card-contant {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: start;
+  letter-spacing: normal;
+  color: #555555;
+}
+.card div .read_more {
+  font-family: "Typeface", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: start;
+  letter-spacing: normal;
+  color: #333333;
+  text-decoration: none;
+}
+.card div * {
+  margin-bottom: 10px;
+}
+
+.card a * {
+  display: inline-block;
+}
+.card a {
+  transition: 1s;
+}
+.card a:hover {
+  color: #fe305c;
+}
+@font-face {
+  font-family: "Typeface";
+  src: local("Roboto"), local("sans-serif");
+  /* Add additional font styles if needed, such as font-weight and font-style */
+}
+/* form page  */
+.contact-us {
+  margin: 100px 0;
+}
+form {
+  margin: auto;
+  margin-top: 30px;
+  width: 50%;
+}
+
+form .name-email input {
+  width: 48%;
+  float: right;
+}
+form .name-email .Name {
+  float: left;
+}
+input,
+textarea {
+  margin-bottom: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+form button {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fe305c;
+  padding: 2px 20px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: normal;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* final page  */
+
+.final {
+  background-color: rgb(51, 51, 51);
+  margin: auto;
+  padding: 50px 0;
+}
+.final * {
+  list-style: none;
+
+  text-align: center;
+}
+.final ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.final ul li a i {
+  color: white;
+  transition: 1s;
+}
+.final ul li a i:hover {
+  color: #ff305b;
+}
+.final p {
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.final p a {
+  text-decoration: none;
+  color: #fe305c;
+}
+.final p a:hover {
+  text-decoration: underline;
+}
